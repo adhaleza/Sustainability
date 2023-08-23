@@ -1,0 +1,343 @@
+plant_leaderboard As screen:
+    LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
+
+    Button10 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(248, 246, 244, 1)
+        Fill: =RGBA(248, 246, 244, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =640
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(236, 236, 235,0), -0%)
+        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(236, 236, 235,0), -0%)
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Size: =24
+        Text: =""
+        Width: =590
+        X: =25
+        Y: =303
+        ZIndex: =1
+
+    "Gallery3_3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        BorderColor: =RGBA(128, 128, 128, 1)
+        BorderThickness: =1
+        DelayItemLoading: =true
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =607
+        Items: |+
+            =Sort('Plant Adoption Total Points',Value('Total Points'), SortOrder.Descending)
+            
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =93
+        Width: =561
+        X: =39
+        Y: =319
+        ZIndex: =3
+
+        Title2_2 As label:
+            Color: =RGBA(50, 49, 48, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =25
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Title
+            VerticalAlign: =VerticalAlign.Top
+            Width: =123
+            X: =57
+            Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle2_2.Size * 1.8)) / 2
+            ZIndex: =2
+
+        Subtitle2_2 As label:
+            Align: =Align.Center
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =1
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Normal, FontWeight.Normal)
+            Height: =64
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =18
+            Text: =ThisItem.Name.DisplayName
+            VerticalAlign: =VerticalAlign.Top
+            Width: =327
+            X: =4
+            Y: =29
+            ZIndex: =3
+
+        Separator3_2 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =0
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =93
+            ZIndex: =5
+
+        Rectangle3_2 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            Height: =Parent.TemplateHeight - Separator3_2.Height
+            OnSelect: =Select(Parent)
+            Visible: =If(ThisItem.IsSelected, true, false)
+            Width: =4
+            ZIndex: =6
+
+        Label12_2 As label:
+            Align: =Align.Center
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =1
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =75
+            OnSelect: =Select(Parent)
+            Size: =18
+            Text: |
+                =Concatenate(Text(Round(ThisItem.'Total Points', 0)), " points")
+            Width: =154
+            X: =360
+            Y: =17
+            ZIndex: =7
+
+    Label5_32 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.View
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =85
+        Size: =24
+        Text: ="Plant Adoption Leaderboard"
+        Width: =458
+        X: =91
+        Y: =120
+        ZIndex: =6
+
+    Rectangle1 As rectangle:
+        BorderColor: =RGBA(128, 128, 128, 1)
+        BorderThickness: =1
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(133, 242, 99, 1)
+        FocusedBorderThickness: =4
+        Height: =48
+        HoverFill: =RGBA(0, 120, 212, 1)
+        PressedFill: =RGBA(0, 120, 212, 1)
+        Width: =561
+        X: =39
+        Y: =248
+        ZIndex: =8
+
+    Label5 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =48
+        Size: =21
+        Text: ="Name"
+        Width: =163
+        X: =136
+        Y: =248
+        ZIndex: =9
+
+    Label5_6 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =48
+        Size: =21
+        Text: ="Points"
+        Width: =163
+        X: =386
+        Y: =248
+        ZIndex: =10
+
+    Icon1_32 As icon.ChevronLeft:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(133, 242, 99, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =47
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(plant_adoption_main,ScreenTransition.CoverRight)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =52
+        X: =62
+        Y: =1030
+        ZIndex: =11
+
+    Label6 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =66
+        Size: =12
+        Text: |-
+            ="note: 
+            The standings may have changed since you last checked. Please refresh the 
+            page to see the latest results."
+        Width: =561
+        X: =38
+        Y: =860
+        ZIndex: =12
+
+    Group1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =14
+
+        Button11 As button:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(133, 242, 99, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =58
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+            OnSelect: |
+                =
+                Set(
+                    var_PlantTotalPoints,
+                    Round(First(Filter(January_1,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                        +
+                    Round(First(Filter(February,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                        + 
+                    Round(First (Filter(March,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                        +
+                    Round(First (Filter(April,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                        +
+                        Round(First (Filter(May,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                        +
+                        Round(First (Filter(June,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                        +
+                        Round(First (Filter(July,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                        +
+                        Round(First (Filter(August,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                        +
+                        Round(First (Filter(September,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                        +
+                        Round(First (Filter(October,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                        +
+                        Round(First (Filter(November,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                        +
+                        Round(First (Filter(December,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0));
+                
+                
+                
+                If(
+                   Not(IsBlank(LookUp('Plant Adoption Total Points', StartsWith(Name.DisplayName, Office365Users.UserProfile(User().Email).DisplayName)))),
+                   Patch(
+                      'Plant Adoption Total Points',
+                      First(Filter('Plant Adoption Total Points', StartsWith(Name.DisplayName, Office365Users.UserProfile(User().Email).DisplayName))),
+                      {
+                         'Total Points':
+                         var_PlantTotalPoints
+                
+                      }
+                      )
+                      
+                      //Else
+                      ,
+                
+                   SubmitForm(Form1);
+                
+                );
+                NewForm(Form1);
+                ResetForm(Form1);
+            PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            RadiusBottomLeft: =30
+            RadiusBottomRight: =30
+            RadiusTopLeft: =30
+            RadiusTopRight: =30
+            Size: =24
+            Text: =""
+            Width: =111
+            X: =264
+            Y: =1025
+            ZIndex: =7
+
+        Icon2 As icon.Reload:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =6
+            Height: =44
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.Reload
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =29
+            X: =305
+            Y: =1033
+            ZIndex: =13
+

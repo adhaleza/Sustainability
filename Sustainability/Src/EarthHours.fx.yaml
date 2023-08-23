@@ -1,0 +1,133 @@
+"EarthHours As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
+
+    Button7 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(248, 246, 244, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =892
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =24
+        Text: =""
+        Width: =596
+        X: =21
+        Y: =162
+        ZIndex: =1
+
+    Canvas2 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =870
+        Width: =585
+        X: =27
+        Y: =166
+        ZIndex: =2
+
+        DataCard4 As dataCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =1799
+            Width: =585
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            Image11 As image:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                FocusedBorderThickness: =4
+                Height: =380
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Image: =EarthHour
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                Width: =617
+                ZIndex: =1
+
+            Label7 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                Height: =1539
+                Size: =21
+                Text: |-
+                    ="On 22 March 2023, Digital Engineering (DE) held its first Earth Hour event in support of the global movement to promote sustainability and combat climate change. We switched off all lights and air conditioning units from 12PM to 2PM for floor 22 to floor 29 of Menara ExxonMobil.
+                    
+                    Besides the switch-off, there were also photo booths set up outside the building for participants to capture the moment with the hashtag #DExEarthHour #EarthDay #DE2023. This activity was not only fun but also helped spread the word about the event and the importance of Earth Hour.
+                    
+                    The event was a resounding success, with employees showing enthusiastic participation in this green initiative. Not only did it create awareness among employees about the need to conserve energy, but it also demonstrated the company's commitment to sustainability and the environment.
+                    
+                    According to the building's energy consumption data, the two-hour power-off period resulted in a reduction in energy consumption. The company was able to save 306 kilowatt-hours (kWh) of electricity. This translates to a reduction in greenhouse gas emissions and is equivalent to the carbon sequestered by around 4 tree seedlings grown over a ten-year period.
+                    
+                    In conclusion, the first Earth Hour event was a success and a positive step forward towards promoting sustainability and fighting climate change. With the company's commitment and the continued support of its employees, it is hoped that more green initiatives like this will be implemented in the future, leading to a more sustainable and eco-friendly workplace."
+                Width: =560
+                X: =10
+                Y: =360
+                ZIndex: =2
+
+    Label5_4 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.View
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =85
+        Size: =24
+        Text: ="Earth Hour "
+        Width: =432
+        X: =97
+        Y: =44
+        ZIndex: =3
+
+    Icon1_31 As icon.ChevronLeft:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(102, 174, 229, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =47
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(Home, ScreenTransition.Fade)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =52
+        X: =27
+        Y: =63
+        ZIndex: =4
+

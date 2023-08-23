@@ -1,0 +1,190 @@
+trash_pickup_pending_1 As screen:
+    LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
+
+    Gallery1_1 As gallery.galleryVertical:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        DelayItemLoading: =true
+        Height: =640
+        Items: ='Trash Pickup'
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplateSize: =59
+        ZIndex: =1
+
+        "DateCreated_1 As 'Date picker'":
+            DisplayMode: =DisplayMode.Edit
+            Height: =59
+            Value: =ThisItem.Created
+            Width: =205
+            X: =4
+            Y: =0
+            ZIndex: =1
+
+        "DateScheduled_1 As 'Date picker'":
+            DisplayMode: =DisplayMode.Edit
+            Height: =59
+            OnChange: =Select(SaveInvisible_1)
+            Value: =ThisItem.ScheduledDate
+            Width: =194
+            X: =209
+            Y: =0
+            ZIndex: =2
+
+        SaveInvisible_1 As Button:
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            OnSelect: |-
+                =If(
+                    IsBlank(
+                        LookUp(
+                            colGridUpdates,
+                            ID = ThisItem.ID
+                        )
+                    ),
+                    Collect(
+                        colGridUpdates,
+                        ThisItem
+                    )
+                );
+                
+                UpdateIf(
+                    colGridUpdates,
+                    ID = ThisItem.ID,
+                    {
+                        ScheduledDate: DateScheduled_1.Value,
+                        MarkAsDone: MarkDone_1.Value
+                    }
+                )
+            Text: ="Save"
+            Visible: =false
+            Width: =33
+            X: =501
+            Y: =14
+            ZIndex: =4
+
+        MarkDone_1 As checkbox:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            CheckboxBorderColor: =RGBA(102, 102, 102, 1)
+            CheckboxSize: =30
+            CheckmarkFill: =RGBA(0, 120, 212, 1)
+            Color: =RGBA(51, 51, 51, 1)
+            Default: =ThisItem.MarkAsDone
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =36
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            OnSelect: =Select(SaveInvisible_1)
+            OnUncheck: =Select(SaveInvisible_1)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =RGBA(51, 51, 51, 1)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Size: =12
+            Text: ="Done"
+            Width: =86
+            X: =415
+            Y: =12
+            ZIndex: =5
+
+        Icon4_1 As icon.Trash:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Color: =RGBA(0, 120, 212, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =40
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.Trash
+            OnSelect: =Remove('Trash Pickup', ThisItem); Set(varReset, false); Set(varReset, true);
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =28
+            X: =546
+            Y: =10
+            ZIndex: =6
+
+    Rectangle4_4 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(133, 242, 99, 1)
+        FocusedBorderThickness: =4
+        Height: =70
+        HoverFill: =RGBA(0, 120, 212, 1)
+        PressedFill: =RGBA(0, 120, 212, 1)
+        Width: =640
+        Y: =174
+        ZIndex: =3
+
+    Button8_5 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(133, 242, 99, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =48
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+        OnSelect: |-
+            =Patch(
+                'Trash Pickup',
+                ShowColumns(
+                    colGridUpdates,
+                    "ScheduledDate",
+                    "MarkAsDone",
+                    "ID"
+                )
+            );
+            
+            Notify("Update Successful", NotificationType.Success, 3000);
+            Clear(colGridUpdates);
+            
+            Set(varReset, false);
+            Set(VarReset, true)
+        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Size: =18
+        Text: ="💾 Save"
+        Width: =134
+        X: =488
+        Y: =107
+        ZIndex: =4
+
+    Image3_13 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =69
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =back
+        OnSelect: =Navigate(trash_pickup_main,ScreenTransition)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =61
+        X: =28
+        Y: =20
+        ZIndex: =5
+
