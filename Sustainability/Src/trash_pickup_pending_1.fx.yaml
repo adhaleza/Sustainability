@@ -12,25 +12,28 @@ trash_pickup_pending_1 As screen:
         ZIndex: =1
 
         "DateCreated_1 As 'Date picker'":
+            BasePaletteColor: =""
             DisplayMode: =DisplayMode.Edit
             Height: =59
-            Value: =ThisItem.Created
+            ValidationState: ="None"
             Width: =205
             X: =4
             Y: =0
             ZIndex: =1
 
         "DateScheduled_1 As 'Date picker'":
+            BasePaletteColor: =""
             DisplayMode: =DisplayMode.Edit
             Height: =59
             OnChange: =Select(SaveInvisible_1)
-            Value: =ThisItem.ScheduledDate
+            ValidationState: ="None"
             Width: =194
             X: =209
             Y: =0
             ZIndex: =2
 
         SaveInvisible_1 As Button:
+            BasePaletteColor: =""
             DisplayMode: =DisplayMode.Edit
             Height: =32
             OnSelect: |-
