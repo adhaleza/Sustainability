@@ -11,7 +11,7 @@
   },
   "Properties": {
     "AppCreationSource": "AppFromFigma",
-    "AppDescription": "Fix the interface of the plant adoption form",
+    "AppDescription": "Fix the interface of the feedback form",
     "AppPreviewFlagsMap": {
       "aibuilderserviceenrollment": false,
       "allowmultiplescreensincanvaspages": false,
@@ -98,7 +98,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 11,
+    "BindingErrorCount": 7,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "Phone",
