@@ -156,10 +156,12 @@ recycling_main As screen:
             FontWeight: =FontWeight.Bold
             Height: =42
             Size: =20
-            Text: =User().FullName
+            Text: |-
+                =
+                User().FullName
             Width: =382
-            X: =82
-            Y: =266
+            X: =87
+            Y: =281
             ZIndex: =7
 
         Icon1_4 As icon.HorizontalLine:
