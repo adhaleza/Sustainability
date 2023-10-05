@@ -10,7 +10,7 @@ recycle_leaderboard As screen:
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
-        Height: =640
+        Height: =963
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(236, 236, 235,0), -0%)
@@ -24,7 +24,8 @@ recycle_leaderboard As screen:
         Size: =24
         Text: =""
         Width: =590
-        X: =25
+        X: =22
+        Y: =66
         ZIndex: =1
 
     Rectangle4_1 As rectangle:
