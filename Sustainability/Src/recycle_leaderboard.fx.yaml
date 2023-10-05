@@ -154,9 +154,9 @@ recycle_leaderboard As screen:
         FontWeight: =FontWeight.Bold
         Height: =64
         Size: =21
-        Text: ="Users"
+        Text: ="Name"
         Width: =127
-        X: =91
+        X: =204
         Y: =233
         ZIndex: =4
 
