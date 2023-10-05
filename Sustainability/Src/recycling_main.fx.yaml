@@ -230,7 +230,6 @@ recycling_main As screen:
         ZIndex: =12
 
     Button2_17 As button:
-        AutoDisableOnSelect: =false
         BorderColor: =RGBA(0, 0, 0, 0)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -242,8 +241,7 @@ recycling_main As screen:
         Height: =65
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: |-
-            =ColorValue("#38B09D")
+        HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         OnSelect: =Navigate(recycle_form_july,ScreenTransition.Fade)
         PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
@@ -301,8 +299,7 @@ recycling_main As screen:
         Height: =65
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: |-
-            =ColorValue("#38B09D")
+        HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         OnSelect: =Navigate(recycle_leaderboard);
         PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
