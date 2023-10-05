@@ -212,12 +212,12 @@ recycle_leaderboard As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
-        Height: =85
-        Size: =24
-        Text: ="Recycle Leaderboard"
+        Height: =145
+        Size: =30
+        Text: ="Recycling Programme Leaderboard"
         Width: =458
         X: =91
-        Y: =120
+        Y: =60
         ZIndex: =10
 
     Label6_1 As label:
