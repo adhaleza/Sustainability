@@ -10,7 +10,7 @@ trash_leaderboard As screen:
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
-        Height: =640
+        Height: =712
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(236, 236, 235,0), -0%)
@@ -25,7 +25,7 @@ trash_leaderboard As screen:
         Text: =""
         Width: =590
         X: =25
-        Y: =303
+        Y: =232
         ZIndex: =1
 
     "Gallery3_4 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
@@ -136,12 +136,12 @@ trash_leaderboard As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
-        Height: =85
-        Size: =24
+        Height: =158
+        Size: =30
         Text: ="Cleanup Programme Leaderboard"
         Width: =458
         X: =91
-        Y: =120
+        Y: =48
         ZIndex: =6
 
     Rectangle1_1 As rectangle:

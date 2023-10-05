@@ -13,12 +13,12 @@ TrashPickup_Form As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
-        Height: =70
-        Size: =21
+        Height: =149
+        Size: =30
         Text: ="Cleanup Activity Form"
         Width: =486
         X: =77
-        Y: =65
+        Y: =32
         ZIndex: =8
 
     Form6_1 As form:

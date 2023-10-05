@@ -144,12 +144,12 @@ trash_pickup_main As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
-        Height: =85
-        Size: =24
+        Height: =132
+        Size: =30
         Text: ="Cleanup Programme"
         Width: =432
         X: =100
-        Y: =100
+        Y: =54
         ZIndex: =14
 
     Circle4_3 As circle:

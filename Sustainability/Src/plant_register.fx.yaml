@@ -13,12 +13,12 @@ plant_register As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
-        Height: =85
-        Size: =24
+        Height: =132
+        Size: =30
         Text: ="Plant Registration Form"
         Width: =432
         X: =104
-        Y: =70
+        Y: =22
         ZIndex: =3
 
     Button3 As button:
