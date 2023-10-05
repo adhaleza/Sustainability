@@ -11,7 +11,7 @@ recycling_main As screen:
         HoverFill: =RGBA(0, 120, 212, 1)
         PressedFill: =RGBA(0, 120, 212, 1)
         Width: =512
-        X: =60
+        X: =64
         Y: =404
         ZIndex: =1
 
@@ -87,21 +87,6 @@ recycling_main As screen:
             X: =106
             Y: =248
             ZIndex: =3
-
-        Circle2_6 As circle:
-            BorderColor: =RGBA(166, 166, 166, 1)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            DisabledFill: =RGBA(0, 120, 212, 1)
-            DisplayMode: =DisplayMode.View
-            Fill: =RGBA(248, 246, 244, 1)
-            Height: =110
-            HoverFill: =RGBA(0, 120, 212, 1)
-            PressedFill: =RGBA(0, 120, 212, 1)
-            Width: =124
-            X: =64
-            Y: =247
-            ZIndex: =4
 
         Circle2_7 As circle:
             BorderColor: =RGBA(166, 166, 166, 1)
