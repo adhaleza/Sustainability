@@ -312,12 +312,12 @@ recycling_main As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
-        Height: =85
+        Height: =171
         Size: =30
         Text: ="Recycling Programme"
         Width: =432
         X: =97
-        Y: =88
+        Y: =54
         ZIndex: =16
 
     Circle4_4 As circle:
