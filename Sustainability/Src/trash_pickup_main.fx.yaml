@@ -110,7 +110,7 @@ trash_pickup_main As screen:
             Text: =User().FullName
             Width: =382
             X: =82
-            Y: =264
+            Y: =282
             ZIndex: =7
 
         Icon1_5 As icon.HorizontalLine:
