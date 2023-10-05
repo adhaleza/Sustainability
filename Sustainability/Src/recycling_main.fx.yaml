@@ -250,7 +250,7 @@ recycling_main As screen:
         RadiusBottomRight: =20
         RadiusTopLeft: =20
         RadiusTopRight: =20
-        Size: =24
+        Size: =26
         Text: ="Recycling Form"
         Width: =475
         X: =84
@@ -308,7 +308,7 @@ recycling_main As screen:
         RadiusBottomRight: =20
         RadiusTopLeft: =20
         RadiusTopRight: =20
-        Size: =20
+        Size: =26
         Text: ="Leaderboard"
         Width: =475
         X: =82
