@@ -10,7 +10,7 @@
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
-        Height: =892
+        Height: =879
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
@@ -25,14 +25,14 @@
         Text: =""
         Width: =596
         X: =21
-        Y: =153
+        Y: =166
         ZIndex: =1
 
     Canvas2 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
         Height: =870
         Width: =585
-        X: =27
+        X: =28
         Y: =166
         ZIndex: =2
 
@@ -44,6 +44,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =1799
             Width: =585
+            WidthFit: =true
             X: =0
             Y: =0
             ZIndex: =1
@@ -65,6 +66,7 @@
                 ZIndex: =1
 
             Label7 As label:
+                Align: =Align.Justify
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
@@ -73,7 +75,7 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
-                Height: =1539
+                Height: =1541
                 Size: =21
                 Text: |-
                     ="On 22 March 2023, Digital Engineering (DE) held its first Earth Hour event in support of the global movement to promote sustainability and combat climate change. We switched off all lights and air conditioning units from 12PM to 2PM for floor 22 to floor 29 of Menara ExxonMobil.
@@ -86,8 +88,8 @@
                     
                     In conclusion, the first Earth Hour event was a success and a positive step forward towards promoting sustainability and fighting climate change. With the company's commitment and the continued support of its employees, it is hoped that more green initiatives like this will be implemented in the future, leading to a more sustainable and eco-friendly workplace."
                 Width: =560
-                X: =10
-                Y: =351
+                X: =12
+                Y: =360
                 ZIndex: =2
 
     Label5_4 As label:
