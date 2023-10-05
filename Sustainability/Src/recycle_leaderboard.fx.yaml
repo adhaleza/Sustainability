@@ -39,7 +39,7 @@ recycle_leaderboard As screen:
         HoverFill: =RGBA(0, 120, 212, 1)
         PressedFill: =RGBA(0, 120, 212, 1)
         Width: =557
-        X: =48
+        X: =39
         Y: =242
         ZIndex: =2
 
@@ -60,7 +60,7 @@ recycle_leaderboard As screen:
         TemplatePadding: =0
         TemplateSize: =93
         Width: =554
-        X: =48
+        X: =39
         Y: =289
         ZIndex: =3
 
@@ -156,7 +156,7 @@ recycle_leaderboard As screen:
         Size: =21
         Text: ="Name"
         Width: =127
-        X: =204
+        X: =177
         Y: =233
         ZIndex: =4
 
@@ -237,7 +237,7 @@ recycle_leaderboard As screen:
             page to see the latest results."
         Width: =561
         X: =41
-        Y: =963
+        Y: =954
         ZIndex: =11
 
     Group1_1 As group:
