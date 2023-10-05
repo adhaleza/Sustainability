@@ -130,7 +130,6 @@ recycling_main As screen:
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =RGBA(0, 0, 0, 0)
             Image: =Office365Users.UserPhoto(User().Email)
-            ImagePosition: =ImagePosition.Fill
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             RadiusBottomLeft: =100
@@ -231,6 +230,7 @@ recycling_main As screen:
         ZIndex: =12
 
     Button2_17 As button:
+        AutoDisableOnSelect: =false
         BorderColor: =RGBA(0, 0, 0, 0)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
