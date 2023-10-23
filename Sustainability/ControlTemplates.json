@@ -68,7 +68,7 @@
     "Name": "PowerApps_CoreControls_ButtonCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "Button",
-    "Version": "0.0.19"
+    "Version": "0.0.20"
   },
   "checkbox": {
     "CustomGroupControlTemplateName": "",
@@ -139,7 +139,7 @@
     "Name": "PowerApps_CoreControls_DatePickerCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "Date picker",
-    "Version": "0.0.8"
+    "Version": "0.0.9"
   },
   "datepicker": {
     "CustomGroupControlTemplateName": "",
