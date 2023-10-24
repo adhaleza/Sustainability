@@ -11,7 +11,7 @@
   },
   "Properties": {
     "AppCreationSource": "AppFromFigma",
-    "AppDescription": "Alter the Leaderboard button and delete testing data for Cleanup Programme",
+    "AppDescription": "Alter the decimal points",
     "AppPreviewFlagsMap": {
       "aibuilderserviceenrollment": false,
       "allowmultiplescreensincanvaspages": false,
