@@ -2438,7 +2438,14 @@
         "HoverFill",
         "Font",
         "FontWeight",
-        "Align",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Align.Left",
+          "InvariantPropertyName": "Align",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "VerticalAlign",
         "X",
         "Y",
@@ -2576,14 +2583,7 @@
         {
           "Category": "Design",
           "PropertyName": "FontWeight",
-          "RuleProviderType": "Unknown",
-          "TaggedRuleArray": [
-            {
-              "InvariantScript": "FontWeight.Semibold",
-              "Property": "FontWeight",
-              "Tag": "{\"start\":0,\"limit\":4}"
-            }
-          ]
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
