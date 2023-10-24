@@ -259,29 +259,29 @@ recycle_leaderboard As screen:
             OnSelect: |-
                 =Set(
                     var_RecycleTotalPoints,
-                    Round(First(Filter(January_2,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                    Round(First(Filter(January_2,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',2)
                         +
-                    Round(First(Filter(February_2,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                    Round(First(Filter(February_2,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',2)
                         + 
-                    Round(First (Filter(March_2,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                    Round(First (Filter(March_2,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',2)
                         +
-                    Round(First (Filter(April_1,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                    Round(First (Filter(April_1,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',2)
                         +
-                        Round(First (Filter(May_1,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                        Round(First (Filter(May_1,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',2)
                         +
-                        Round(First (Filter(June_1,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                        Round(First (Filter(June_1,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',2)
                         +
-                        Round(First (Filter(July_1,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                        Round(First (Filter(July_1,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',2)
                         +
-                        Round(First (Filter(August_1,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                        Round(First (Filter(August_1,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',2)
                         +
-                        Round(First (Filter(September_1,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                        Round(First (Filter(September_1,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',2)
                         +
-                        Round(First (Filter(October_1,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                        Round(First (Filter(October_1,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',2)
                         +
-                        Round(First (Filter(November_1,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                        Round(First (Filter(November_1,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',2)
                         +
-                        Round(First (Filter(December_1,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',0)
+                        Round(First (Filter(December_1,Office365Users.UserProfile(User().Email).DisplayName in Name.DisplayName)).'Total Points',2)
                     );
                 
                 Set(
