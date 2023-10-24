@@ -420,10 +420,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 31,
-                  "charOffset": 12,
+                  "charLength": 32,
+                  "charOffset": 17,
                   "snippet": {
-                    "text": "Text(ThisItem.'Total Point', 0)"
+                    "text": "Value(ThisItem.'Total Point', 0)"
                   }
                 }
               },
@@ -436,7 +436,7 @@
           ],
           "message": {
             "arguments": [
-              "Text"
+              "Value"
             ],
             "id": "issue"
           },
@@ -461,7 +461,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 41,
+                  "charOffset": 47,
                   "snippet": {
                     "text": "0"
                   }
