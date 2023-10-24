@@ -217,6 +217,7 @@ recycle_leaderboard As screen:
         ZIndex: =10
 
     Label6_1 As label:
+        Align: =Align.Center
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
@@ -228,9 +229,8 @@ recycle_leaderboard As screen:
         Height: =66
         Size: =12
         Text: |-
-            ="note: 
-            The standings may have changed since you last checked. Please refresh the 
-            page to see the latest results."
+            ="NOTE: The standings may have changed since you last checked.
+            Please refresh the page to see the latest results."
         Width: =561
         X: =41
         Y: =954
