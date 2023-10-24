@@ -131,7 +131,7 @@ recycle_leaderboard As screen:
             OnSelect: =Select(Parent)
             Size: =18
             Text: |
-                =Concatenate(Text(Round(ThisItem.'Total Point', 0)), " points")
+                =Concatenate(Text(ThisItem.'Total Point', 0), " points")
             Width: =186
             X: =361
             Y: =17
